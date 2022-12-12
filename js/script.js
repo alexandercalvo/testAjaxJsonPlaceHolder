@@ -53,6 +53,7 @@ const clearForm = () =>{
   $btnSend.classList.add('container-form__send')
 
 }
+
 //metodo para mostrar todos  los usuarios ala carga del documento la tabla
 const showUserToTable = (users) =>{
   users.map((user)=>{   
@@ -74,7 +75,7 @@ const showUserToTable = (users) =>{
 }
 
 //metodo para que se ejecutara una vez el API responda
-const test = (user) =>{
+const showUserToUpdate = (user) =>{
   let json = JSON.parse(user)
   $form.firstName.value = json.firstName;
   $form.lastName.value = json.lastName;
@@ -90,7 +91,7 @@ const fillFieldsForm = (id, component) =>{
   $btnSend.classList.add('container-form__update');
   $btnSend.classList.remove('container-form__send');
   $tableRow = component.parentNode.parentNode;
-  getUserForId(id, test);
+  getUserForId(id, showUserToUpdate);
 }
 
 //metodo para agregar un usuario a la api de json-placeholder
@@ -223,6 +224,7 @@ const listenEvenClick = () =>{
   });
 
 }
+
 
 listenEvenClick();  
 getAllUser();
