@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="container-form">
+    <form action=""  enctype="multipart/form-data" class="container-form__form">
+      <fieldset>
+        <div class="container-form__row">
+            <label for="firstName " class="container-form__label">Nombre</label>
+            <input type="text" class="container-form__input" name="firstName"></div>
+        <div class="container-form__row">
+            <label for="lastName" class="container-form__label">Apellido</label>
+            <input type="text" class="container-form__input" name="lastName"></div>
+        <div class="container-form__row">
+            <label for="email" class="container-form__label">Email</label>
+            <input type="text" class="container-form__input" name="email"></div>
+        <div class="container-form__row">
+            <label for="phone" class="container-form__label">Teléfono</label>
+            <input type="text" class="container-form__input" name="phone"></div>
+        <div class="container-form__row">
+            <label for="address" class="container-form__label">Dirección</label>
+            <input type="text" class="container-form__input" name="address"></div>
+          <div class="container-form__buttons">
+            <button class="container-form__send">Nuevo</button>
+            <button class="container-form__delete">Borrar</button>
+          </div>
+          <input type="hidden"class="container-form__id" name="id">
+      </fieldset>
+    </form>
+  </section>
+  <section class="section-table">
+    <h2 class="section-table__title">mis usuarios</h2>
+    <div class="section-table__container">
+      <table class="section-table__table"> 
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="section-table__body">
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <template id="rows" class="register-table">
+      <tr class="register-table__row">
+        <td class="register-table__id"></td>
+        <td class="register-table__name"></td>
+        <td class="register-table__lastname"></td>
+        <td class="register-table__email"></td>
+        <td class="register-table__phone"></td>
+        <td class="register-table__address"></td>
+        <td>
+          <a href="#" class="register-table__update">
+              <i class="fa-solid fa-pencil"></i>
+          </a>
+        </td>
+        <td>
+          <a href="#" class="register-table__delete">
+            <i class="fa-regular fa-trash-can"></i>
+          </a>
+        </td>
+      </tr>
+  </template>
+  <script src="./js/script.js"></script>
+</body>
+</html>

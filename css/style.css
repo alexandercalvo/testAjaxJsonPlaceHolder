@@ -1,0 +1,45 @@
+ .container-form{
+   background-color: tomato;
+   width: 25%;
+   margin: 0 auto;
+   padding: 30px 20px;
+ }
+
+.container-form__row{
+   display:flex;
+   justify-content: space-between;
+   margin:20px 10px;
+  
+ }
+
+ .section-table{
+   margin:60px 10px;
+   background-color:#B1AFFF;
+   padding:50px 0;
+ }
+ .section-table__title{
+   text-align: center;
+ }
+
+ .section-table__table{
+    margin:auto;
+   width:90%;
+ }
+
+ .section-table__table th{
+   background-color:#FDFDBD;
+   font-size:1.25rem;
+   font-weight:bold
+ }
+.register-table__row{
+   text-align:center;
+   font-size:1rem;
+   
+}
+#section-table__body .register-table__row:nth-child(2n) {
+   background-color:#C8FFD4;
+ }
+
+#section-table__body .register-table__row:nth-child(2n + 1){
+    background-color:#B8E8FC;
+ }
